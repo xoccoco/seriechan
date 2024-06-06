@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La serietulia - Festival de Series de Barcelona 2024</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script async src="js/app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo_hr.png" alt="logotipo de serietulia">
+    </header>
+    <div class="contenedor">
+        <main>
+            <section class="s1_top">
+                <div class="s1_image">
+                    <picture>
+                        <source srcset="img/televisor.jpg, img/televisor@2x.jpg 2x, televisor@3x.jpg 3x">
+                        <img src="img/televisor@3x.jpg" alt="Televisor">
+                    </picture>
+                </div>
+                <div class="s1_text">
+                    <h2 class="catch">Maníacs de les sèries? <span class="catch blue">Teniu una cita ineludible.</span>
+                    </h2>
+                    <p>Els pròxims 22 i 23 de novembre tens una cita que no pots deixar perdre. Passa't a compartir la
+                        teva
+                        passió pel setè art "de sofà" amb uns convidats excepcionals.</p>
+                    <div class="s1_newsletter">
+                        <form method="post" action="newsletter.php" id="s1_newsletter_form"
+                            enctype="application/x-www-form-urlencoded">
+
+                            <div class="s1_newsletter_form_1rlinea">
+                                <input type="text" id="email" name="email" class="email" value="Tu email" tabindex="2">
+                                <button type="button" tabindex="3">Alta Newsletter</button>
+                            </div>
+
+                            <div class="s1_newsletter_form_2olinea">
+                                <input type="checkbox" id="condicion" name="condicion" class="condicion" tabindex="2">
+                                <label for="condicion">He llegit i accepto la política de privacitat</label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="s2_activitat">
+                <h2>Activitats dins del festival</h2>
+                <div class="s2_activitat_cardbox">
+                    <a href="#">
+                        <div class="s2_activitat_card">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <path
+                                        d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z" />
+                                </svg></div>
+                            <p>Taules rodones</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="s2_activitat_card">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z" />
+                                </svg></div>
+                            <p>Projecció de sèries</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="s2_activitat_card">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1 .9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9 .7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" />
+                                </svg></div>
+                            <p>Debats amb els convidats</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="s2_activitat_card">
+                            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z" />
+                                </svg></div>
+                    </a>
+                    <p>Serietúlia Pro</p>
+                </div>
+            </section>
+
+            <section class="s3_convidat">
+
+                <h2>Convidats de luxe</h2>
+                <p>Actors, actrius i guionistes convidats a les xerrades i debats en el visionament de capítols
+                    emblemàtics
+                    que es durà a terme a la Filmoteca.</p>
+                <div id="cards"></div>
+
+                <dialog id="artist_dialog">
+                    <article class="dialog_box">
+                        <div class="dialog_perfil"><img src="img/img-dialog/phoebe/Phoebe Waller-Bridge@3x.jpg"></div>
+                        <div class="dialog_description">
+                            <h3 class="dialog_description_h3">Phoebe Waller-Bridge</h3>
+                            <p class="dialog_description_p">Phoebe Waller-Bridge és una actriu, productora i escriptora
+                                anglesa. Va crear, escriure i
+                                protagonitzar la sitcom de Channel 4, Crashing (2016) i la sèrie de comèdia dramàtica de
+                                la BBC, Fleabag (2016-2019). També va ser la productora de televisió i productora
+                                executiva per a la primera sèrie de suspens de la BBC America, Killing Eve (2018).</p>
+                            <div class="dialog_series"><img src="img/fleabag.jpg" alt="fleabag"><img
+                                    src="img/killing-eve.jpg" alt="Killing Eve"></div>
+                        </div>
+                        <button type="button" id="btn_close" class="btn_close"><img src="img/close.png"></button>
+                    </article>
+                </dialog>
+
+            </section>
+
+
+            <section class="s4_series">
+
+                <h2>Les millors sèries</h2>
+                <p>Troba les sèries que projectarem al festival a la teva plataforma.</p>
+
+                <div class="botones">
+                    <button class="btn" id="totes" name="totes">totes</button>
+                    <button class="btn" id="hbo" name="hbo">HBO max</button>
+                    <button class="btn" id="netflix" name="netflix">Netflix</button>
+                    <button class="btn" id="filmin" name="filmin">Filmin</button>
+                    <button class="btn" id="prime" name="prime">Prime</button>
+                    <button class="btn" id="disney" name="disney">Disney +</button>
+                </div>
+
+                <div class="series">
+                    <article class="serie" title="prime">
+                        <picture>
+                            <source
+                                srcset="img/series/castle@1x.jpg, img/series/castle@2x.jpg 2x, img/series/castle@3x.jpg 3x">
+                            <img src="img/series/castle@3x.jpg" alt="Castle" class="castle" id="castle">
+                        </picture>
+                    </article>
+
+                    <article class="serie" title="hbo">
+                        <picture>
+                            <source
+                                srcset="img/series/firefly@1x.jpg, img/series/firefly@2x.jpg 2x, img/series/firefly@3x.jpg 3x">
+                            <img src="img/series/firefly@3x.jpg" alt="Firefly" class="firefly" id="firefly">
+                        </picture>
+                    </article>
+
+                    <article class="serie" title="netflix">
+                        <picture>
+                            <source
+                                srcset="img/series/fleabag@1x.jpg, img/series/fleabag@2x.jpg 2x, img/series/fleabag@3x.jpg 3x">
+                            <img src="img/series/fleabag@3x.jpg" alt="Fleabag">
+                        </picture>
+                    </article>
+                    <article class="serie" title="netflix">
+                        <picture>
+                            <source
+                                srcset="img/series/girls@1x.jpg, img/series/girls@2x.jpg 2x, img/series/girls@3x.jpg 3x">
+                            <img src="img/series/girls@3x.jpg" alt="Girls">
+                        </picture>
+                    </article>
+
+                    <article class="serie" title="filmin">
+                        <picture>
+                            <source
+                                srcset="img/series/halt-catch@1x.jpg, img/series/halt-catch@2x.jpg 2x, img/series/halt-catch@3x.jpg 3x">
+                            <img src="img/series/halt-catch@3x.jpg" alt="Halt Catch">
+                        </picture>
+                    </article>
+
+                    <article class="serie" title="filmin">
+                        <picture>
+                            <source
+                                srcset="img/series/killing-eve@1x.jpg, img/series/killing-eve@2x.jpg 2x,img/series/killing-eve@3x.jpg 3x">
+                            <img src="img/series/killing-eve@3x.jpg" alt="Halt Catch">
+                        </picture>
+                    </article>
+                    <article class="serie" title="disney">
+                        <picture>
+                            <source
+                                srcset="img/series/luther@1x.jpg, img/series/luther@2x.jpg 2x, img/series/luther@3x.jpg 3x">
+                            <img src="img/series/luther@3x.jpg" alt="Luther">
+                        </picture>
+                    </article>
+
+                    <article class="serie" title="netflix">
+                        <picture>
+                            <source
+                                srcset="img/series/the-office@1x.jpg, img/series/the-office@2x.jpg 2x, img/series/the-office@3x.jpg 3x">
+                            <img src="img/series/the-office@3x.jpg" alt="The office">
+                        </picture>
+                    </article>
+                </div>
+
+
+
+
+            </section>
+
+            <section class="s5_newsletter">
+
+                <h2>Vols rebre informació?</h2>
+                <p>Troba les sèries que projectarem al festival a la teva plataforma.</p>
+                <form method="post" action="newsletter.php" id="s5_newsletter_form"
+                    enctype="application/x-www-form-urlencoded">
+
+                    <div class="s5_newsletter_form_1rlinea">
+                        <input type="text" id="email" name="email" class="email" value="Tu email" tabindex="2">
+                        <button type="button" tabindex="3">Alta Newsletter</button>
+                    </div>
+
+                    <div class="s5_newsletter_form_2olinea">
+                        <input type="checkbox" id="condicion" name="condicion" class="condicion" tabindex="2">
+                        <label for="condicion">He llegit i accepto la política de privacitat</label>
+                    </div>
+
+                </form>
+
+            </section>
+            <section class="s6_ubicacion">
+                <h2>Espai i dates</h2>
+
+                <div class="s6_ubicacion_box">
+
+                    <div class="mapa">
+                        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+                        <script type="module" src="js/map.js"></script>
+                        <!--The div element for the map -->
+                        <div id="map"></div>
+
+                        <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+                                ({ key: "AIzaSyAB5tpU0fFYwmRHRzR1ZAhGCDRsPvRJhUA", v: "beta" });</script>
+                    </div>
+                    <div class="s6_ubicacion_datas">
+                        <h3>22 i 23 de novembre</h3>
+                        <h4>Filmoteca de Catalunya</h4>
+                        <address>Plaça Salvador Seguí, 1 - 9
+                            08001 Barcelona</address>
+                        <h4>Restaurant «La Monroe»</h4>
+                        <address>Plaça Salvador Seguí 08001 Barcelona</address>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h2>Patrocinadors i col·laboradors</h2>
+            <div class="linea1">
+                <img src="img/logo-damm.png" alt="Estrella damm">
+                <img src="img/logo_vichy.png" alt="Vichy Catalan">
+            </div>
+            <div class="linea2">
+                <img src="img/logo_hbo.png" alt="HBO">
+                <img src="img/logo_netflix.png" alt="Netflex">
+                <img src="img/logo_rtve.png" alt="RTVE">
+                <img src="img/logo_icatfm.png" alt="i cat fm" class="icat">
+                <img src="img/logo_timeout.png" alt="Time Out">
+            </div>
+            <div class="linea3">
+                <img src="img/logo_ajuntament.png" alt="Ajyutament Barcelona">
+                <img src="img/logo_beteve.png" alt="beteve">
+                <img src="img/logo_catfilm.png" alt="Catalunya Film Festival">
+                <img src="img/logo_escac.png" alt="escac">
+                <img src="img/logo_cccb.png" alt="cccb">
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="js/filter.js"></script>
+    <script src="js/map.js" type="module"></script>
+
+</body>
+
+</html>
