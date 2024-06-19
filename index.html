@@ -7,52 +7,60 @@
     <title>La serietulia - Festival de Series de Barcelona 2024</title>
     <link rel="stylesheet" href="css/reset.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <script async src="js/app.js" type="module"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.coursel.js"></script>
+    <script src="js/init.js"></script>
+
+
 </head>
 
 <body>
+
     <header>
         <img src="img/logo_hr.png" alt="logotipo de serietulia">
     </header>
-    <div class="contenedor">
-        <main>
-            <section class="s1_top">
-                <div class="s1_image">
-                    <picture>
-                        <source srcset="img/televisor.jpg, img/televisor@2x.jpg 2x, televisor@3x.jpg 3x">
-                        <img src="img/televisor@3x.jpg" alt="Televisor">
-                    </picture>
+
+    <main>
+        <section class="s1_top">
+            <div class="s1_image">
+                <picture>
+                    <source srcset="img/televisor.jpg, img/televisor@2x.jpg 2x, televisor@3x.jpg 3x">
+                    <img src="img/televisor@3x.jpg" alt="Televisor">
+                </picture>
+            </div>
+            <div class="s1_text">
+                <h2 class="catch">Maníacs de les sèries? <span class="catch blue">Teniu una cita ineludible.</span>
+                </h2>
+                <p>Els pròxims 22 i 23 de novembre tens una cita que no pots deixar perdre. Passa't a compartir la
+                    teva
+                    passió pel setè art "de sofà" amb uns convidats excepcionals.</p>
+                <div class="s1_newsletter">
+
+                    <form method="post" action="newsletter.php" id="s1_newsletter_form"
+                        enctype="application/x-www-form-urlencoded">
+
+                        <div class="s1_newsletter_form_1rlinea">
+                            <input type="email" id="email" name="email" class="email" tabindex="1">
+                            <button type="submit" tabindex="3">Alta Newsletter</button>
+                        </div>
+
+                        <div class="s1_newsletter_form_2olinea">
+                            <input type="checkbox" id="condicion" name="condicion" class="condicion" tabindex="2">
+                            <label for="condicion">He llegit i accepto la política de privacitat</label>
+                        </div>
+
+                    </form>
                 </div>
-                <div class="s1_text">
-                    <h2 class="catch">Maníacs de les sèries? <span class="catch blue">Teniu una cita ineludible.</span>
-                    </h2>
-                    <p>Els pròxims 22 i 23 de novembre tens una cita que no pots deixar perdre. Passa't a compartir la
-                        teva
-                        passió pel setè art "de sofà" amb uns convidats excepcionals.</p>
-                    <div class="s1_newsletter">
-                        <form method="post" action="newsletter.php" id="s1_newsletter_form"
-                            enctype="application/x-www-form-urlencoded">
+            </div>
 
-                            <div class="s1_newsletter_form_1rlinea">
-                                <input type="text" id="email" name="email" class="email" value="Tu email" tabindex="2">
-                                <button type="button" tabindex="3">Alta Newsletter</button>
-                            </div>
-
-                            <div class="s1_newsletter_form_2olinea">
-                                <input type="checkbox" id="condicion" name="condicion" class="condicion" tabindex="2">
-                                <label for="condicion">He llegit i accepto la política de privacitat</label>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-
-            </section>
-
+        </section>
+        <div class="contenedor">
             <section class="s2_activitat">
                 <h2>Activitats dins del festival</h2>
                 <div class="s2_activitat_cardbox">
@@ -98,9 +106,8 @@
             <section class="s3_convidat">
 
                 <h2>Convidats de luxe</h2>
-                <p>Actors, actrius i guionistes convidats a les xerrades i debats en el visionament de capítols
-                    emblemàtics
-                    que es durà a terme a la Filmoteca.</p>
+                <p>Actors, actrius i guionistes convidats a les xerrades i debats en el <span class="br">visionament de
+                        capítols emblemàtics que es durà a terme a la Filmoteca.</span> </p>
                 <div id="cards"></div>
 
                 <dialog id="artist_dialog">
@@ -119,6 +126,7 @@
                         <button type="button" id="btn_close" class="btn_close"><img src="img/close.png"></button>
                     </article>
                 </dialog>
+                <!-- <div id="owl-coursel"></div> -->
 
             </section>
 
@@ -210,20 +218,17 @@
 
                 <h2>Vols rebre informació?</h2>
                 <p>Troba les sèries que projectarem al festival a la teva plataforma.</p>
+
                 <form method="post" action="newsletter.php" id="s5_newsletter_form"
                     enctype="application/x-www-form-urlencoded">
-
-                    <div class="s5_newsletter_form_1rlinea">
-                        <input type="text" id="email" name="email" class="email" value="Tu email" tabindex="2">
-                        <button type="button" tabindex="3">Alta Newsletter</button>
-                    </div>
-
-                    <div class="s5_newsletter_form_2olinea">
-                        <input type="checkbox" id="condicion" name="condicion" class="condicion" tabindex="2">
-                        <label for="condicion">He llegit i accepto la política de privacitat</label>
-                    </div>
-
+                    <ul>
+                        <li class="linea1"><input type="email" id="s5_email" name="s5_email" class="email" tabindex="1"></li>
+                        <li class="linea2"><button type="submit" tabindex="3">Alta Newsletter</button></li>
+                        <li class="linea3"><div class="condicion"><input type="checkbox" id="s5_condicion" name="condicion" class="condicion" tabindex="2">
+                        <label for="condicion">He llegit i accepto la política de privacitat</label></div></li>
+                    </ul>
                 </form>
+
 
             </section>
             <section class="s6_ubicacion">
@@ -245,40 +250,45 @@
                         <h3>22 i 23 de novembre</h3>
                         <h4>Filmoteca de Catalunya</h4>
                         <address>Plaça Salvador Seguí, 1 - 9
-                            08001 Barcelona</address>
+                            <span class="br">08001 Barcelona</span>
+                        </address>
                         <h4>Restaurant «La Monroe»</h4>
-                        <address>Plaça Salvador Seguí 08001 Barcelona</address>
+                        <address>Plaça Salvador Seguí <span class="br">08001 Barcelona</span></address>
                     </div>
+
                 </div>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-            <h2>Patrocinadors i col·laboradors</h2>
-            <div class="linea1">
-                <img src="img/logo-damm.png" alt="Estrella damm">
-                <img src="img/logo_vichy.png" alt="Vichy Catalan">
-            </div>
-            <div class="linea2">
-                <img src="img/logo_hbo.png" alt="HBO">
-                <img src="img/logo_netflix.png" alt="Netflex">
-                <img src="img/logo_rtve.png" alt="RTVE">
-                <img src="img/logo_icatfm.png" alt="i cat fm" class="icat">
-                <img src="img/logo_timeout.png" alt="Time Out">
-            </div>
-            <div class="linea3">
-                <img src="img/logo_ajuntament.png" alt="Ajyutament Barcelona">
-                <img src="img/logo_beteve.png" alt="beteve">
-                <img src="img/logo_catfilm.png" alt="Catalunya Film Festival">
-                <img src="img/logo_escac.png" alt="escac">
-                <img src="img/logo_cccb.png" alt="cccb">
-            </div>
+    <footer>
+        <h2>Patrocinadors i col·laboradors</h2>
+        <div class="linea1">
+            <img src="img/logo-damm.png" alt="Estrella damm">
+            <img src="img/logo_vichy.png" alt="Vichy Catalan">
+        </div>
+        <div class="linea2">
+            <img src="img/logo_hbo.png" alt="HBO">
+            <img src="img/logo_netflix.png" alt="Netflex">
+            <img src="img/logo_rtve.png" alt="RTVE">
+            <img src="img/logo_icatfm.png" alt="i cat fm" class="icat">
+            <img src="img/logo_timeout.png" alt="Time Out">
+        </div>
+        <div class="linea3">
+            <img src="img/logo_ajuntament.png" alt="Ajyutament Barcelona">
+            <img src="img/logo_beteve.png" alt="beteve">
+            <img src="img/logo_catfilm.png" alt="Catalunya Film Festival">
+            <img src="img/logo_escac.png" alt="escac">
+            <img src="img/logo_cccb.png" alt="cccb">
+        </div>
 
-        </footer>
+    </footer>
 
-    </div>
+
     <script src="js/filter.js"></script>
     <script src="js/map.js" type="module"></script>
+    <script src="js/validacion.js"></script>
+    
 
 </body>
 

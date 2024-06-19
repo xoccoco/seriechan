@@ -67,6 +67,11 @@ export async function generarTarjetas() {
 
         contenedorCards.appendChild(card);
 
+        // card.addEventListener("mouseover", ()=>{
+
+
+        // })
+
 
         let $btnModal = document.querySelector("#btn_veure");
 
